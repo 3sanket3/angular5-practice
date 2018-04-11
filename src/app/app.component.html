@@ -1,7 +1,11 @@
 <mat-sidenav-container>
   <mat-sidenav [opened]=true [mode]="'side'" [fixedInViewport]=true [disableClose]=true>
 
-    <avatar  [caption]="'Sanket Patel'" src="assets/images/angular.png" alt="Angular Logo" ></avatar>
+    <avatar [caption]="'Sanket Patel'" src="assets/images/angular.png" alt="Angular Logo"></avatar>
+    <badge [counter]=50>
+      <mat-icon class="badge-content">mail</mat-icon>
+
+    </badge>
 
     <h1>This is side nav</h1>
   </mat-sidenav>
