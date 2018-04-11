@@ -14,3 +14,8 @@ badge{
 .badge-icon {
     font-size: x-large;
 }
+
+mat-divider{
+    border-color: lightgray;
+    margin: 0 10px;
+}
