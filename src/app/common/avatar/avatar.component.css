@@ -1,0 +1,29 @@
+.wrapper{
+    text-align: center;
+    margin : 10px auto;
+
+}
+
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.rounded-border{
+    border-radius: 50%;
+}
+
+.size-default{
+    width: 70px;
+    height: 70px;
+}
+
+.caption{
+    font-size: 18px;
+    margin: 5px auto;
+    font-weight: 600;
+}
+
+.center {
+    margin: 0 auto;
+}
