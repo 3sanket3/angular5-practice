@@ -3,6 +3,7 @@ mat-sidenav {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    width: 250px;
 }
 
 badge{
