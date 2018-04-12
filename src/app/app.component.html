@@ -1,42 +1,44 @@
 <mat-sidenav-container>
   <mat-sidenav [opened]=true [mode]="'side'" [fixedInViewport]=true [disableClose]=true>
     <div>
-      <avatar [caption]="'Sanket Patel'" src="assets/images/angular.png" alt="Angular Logo"></avatar>
+      <avatar [caption]="'Sanket Patel'" src="assets/images/angular.png" alt="Angular Logo" (click) = "toggleMenu()"></avatar>
       <badge [counter]=50>
         <mat-icon class="badge-content">mail</mat-icon>
 
       </badge>
     </div>
     <mat-divider></mat-divider>
+    <collpsible [state]="menuState">
+      <mat-nav-list>
+        <mat-list-item>
+          <mat-icon>home</mat-icon>
+          <a href="#">Home</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>home</mat-icon>
+          <a href="#">Home</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>home</mat-icon>
+          <a href="#">Home</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>home</mat-icon>
+          <a href="#">Home</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>home</mat-icon>
+          <a href="#">Home</a>
+        </mat-list-item>
 
-    <mat-nav-list>
-      <mat-list-item>
-        <mat-icon>home</mat-icon>
-        <a href="#">Home</a>
-      </mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>
-        <mat-icon>home</mat-icon>
-        <a href="#">Home</a>
-      </mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>
-        <mat-icon>home</mat-icon>
-        <a href="#">Home</a>
-      </mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>
-        <mat-icon>home</mat-icon>
-        <a href="#">Home</a>
-      </mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>
-        <mat-icon>home</mat-icon>
-        <a href="#">Home</a>
-      </mat-list-item>
+      </mat-nav-list>
+    </collpsible>
 
-    </mat-nav-list>
-
+    <h3>sdafd</h3>
   </mat-sidenav>
 
 

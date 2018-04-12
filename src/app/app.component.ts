@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  menuState: string = 'open';
+  toggleMenu(){
+    this.menuState =this.menuState === 'open' ? 'close' : 'open';
+  }
 }
