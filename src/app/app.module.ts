@@ -5,6 +5,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { CommonModule } from './common/common.module';
+import { AppRoutingModule } from './/app-routing.module';
+import {PublicPagesModule} from './public-pages/public-pages.module'
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { CommonModule } from './common/common.module';
     BrowserModule,
     MaterialComponentModule,
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    AppRoutingModule,
+    PublicPagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
