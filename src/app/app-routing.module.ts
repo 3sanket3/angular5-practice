@@ -5,10 +5,15 @@ import { HomeComponent } from "./public-pages/home/home.component";
 import { DashaboardComponent } from "./private-pages/dashaboard/dashaboard.component";
 
 const routes: Routes = [
-  { path: "", component: DashaboardComponent, pathMatch: "full" },
-  { path: "dashboard", component: DashaboardComponent },
-  { path: "home", component: HomeComponent },
-  { path: "contact", component: ContactFormComponent }
+  { path: "", redirectTo:"dashboard", pathMatch: "full" },
+  {
+    path: "dashboard",
+    component: DashaboardComponent,
+    children: [
+      { path: "home", component: HomeComponent },
+      { path: "contact", component: ContactFormComponent }
+    ]
+  }
 ];
 
 @NgModule({
