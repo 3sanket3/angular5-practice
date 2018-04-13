@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CommonModule } from './common/common.module';
 import { AppRoutingModule } from './/app-routing.module';
 import {PublicPagesModule} from './public-pages/public-pages.module'
+import { PrivatePagesModule } from './private-pages/private-pages.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {PublicPagesModule} from './public-pages/public-pages.module'
     BrowserAnimationsModule,
     CommonModule,
     AppRoutingModule,
-    PublicPagesModule
+    PublicPagesModule,
+    PrivatePagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

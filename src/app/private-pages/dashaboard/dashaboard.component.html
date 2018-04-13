@@ -1,0 +1,36 @@
+<mat-sidenav-container>
+  <mat-sidenav [opened]=true [mode]="'side'" [fixedInViewport]=true [disableClose]=true>
+    <div>
+      <avatar [caption]="'Sanket Patel'" src="assets/images/angular.png" alt="Angular Logo" (click)="toggleMenu()"></avatar>
+      <badge [counter]=50>
+        <mat-icon class="badge-content">mail</mat-icon>
+
+      </badge>
+    </div>
+    <mat-divider></mat-divider>
+    <collpsible [state]="menuState">
+      <mat-nav-list>
+
+
+        <a mat-list-item routerLink="/home">
+          <mat-icon>home</mat-icon> Home </a>
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/contact">
+          <mat-icon>home</mat-icon> Contact </a>
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/home">
+          <mat-icon>home</mat-icon> Home </a>
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/home">
+          <mat-icon>home</mat-icon> Home </a>
+        <mat-divider></mat-divider>
+
+      </mat-nav-list>
+    </collpsible>
+
+    <h3>sdafd</h3>
+  </mat-sidenav>
+
+  <router-outlet></router-outlet>
+
+</mat-sidenav-container>
