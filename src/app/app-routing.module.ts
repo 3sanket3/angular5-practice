@@ -3,6 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { ContactFormComponent } from "./public-pages/contact-form/contact-form.component";
 import { HomeComponent } from "./public-pages/home/home.component";
 import { DashaboardComponent } from "./private-pages/dashaboard/dashaboard.component";
+import { BillComponent } from "./private-pages/bill/bill.component";
 
 const routes: Routes = [
   { path: "", redirectTo:"dashboard", pathMatch: "full" },
@@ -11,7 +12,8 @@ const routes: Routes = [
     component: DashaboardComponent,
     children: [
       { path: "home", component: HomeComponent },
-      { path: "contact", component: ContactFormComponent }
+      { path: "contact", component: ContactFormComponent },
+      { path: "bill", component: BillComponent }
     ]
   }
 ];

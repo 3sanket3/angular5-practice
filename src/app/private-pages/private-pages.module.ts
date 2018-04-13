@@ -4,6 +4,7 @@ import { DashaboardComponent } from './dashaboard/dashaboard.component';
 import { MaterialComponentModule } from '../material-component/material-component.module';
 import { AppRoutingModule } from '../app-routing.module';
 import {CommonModule as CommonComponent} from '../common/common.module';
+import { BillComponent } from './bill/bill.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import {CommonModule as CommonComponent} from '../common/common.module';
     AppRoutingModule
   ],
   exports:[DashaboardComponent],
-  declarations: [DashaboardComponent]
+  declarations: [DashaboardComponent, BillComponent]
 })
 export class PrivatePagesModule { }
