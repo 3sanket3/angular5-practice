@@ -22,4 +22,11 @@ describe('BillComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have para', ()=>{
+
+    const ele = fixture.debugElement.nativeElement;
+    expect(ele.querySelector('p').textContent.trim()).toContain('works');
+
+  })
 });
