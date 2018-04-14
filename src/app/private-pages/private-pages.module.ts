@@ -5,6 +5,7 @@ import { MaterialComponentModule } from '../material-component/material-componen
 import { AppRoutingModule } from '../app-routing.module';
 import {CommonModule as CommonComponent} from '../common/common.module';
 import { BillComponent } from './bill/bill.component';
+import { BillService } from './bill/bill.service';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { BillComponent } from './bill/bill.component';
     AppRoutingModule
   ],
   exports:[DashaboardComponent],
-  declarations: [DashaboardComponent, BillComponent]
+  declarations: [DashaboardComponent, BillComponent],
+  providers: [BillService]
 })
 export class PrivatePagesModule { }
